@@ -1,0 +1,8 @@
+@import "./variables";
+
+//flex
+@each $key, $value in $flex-jc { // $flex-jc是_variables.scss中的变量
+    .jc-#{$key} { // 通过 #{} 插值语句可以在选择器或属性名中使用变量
+      justify-content: $value;
+    }
+}
